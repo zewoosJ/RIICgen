@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기반시설 JSON 생성기</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/commonmark/0.29.3/commonmark.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="RIIC_generator\js\chosen.jquery.min.js"></script>
+</head>
+
+<body>
+    <p>작동 확인</p>
+    <select>
+        <script>
+        var str="제조사1,제조사2,제조사3,......." //쉼표로 구분
+        str= str.split(',');
+        for(var i=0;i<str.length;i++) document.write("<option value='" + str[i] + "'>" + str[i]);
+        </script>
+        </select>
+</body>
+</html>
